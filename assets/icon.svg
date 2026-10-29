@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1E24"/>
+      <stop offset="100%" stop-color="#121216"/>
+    </linearGradient>
+    <linearGradient id="claudeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97757"/>
+      <stop offset="100%" stop-color="#E58B6D"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bgGrad)" stroke="#2D2D38" stroke-width="2"/>
+  <!-- Circular meter arc track -->
+  <circle cx="64" cy="64" r="44" fill="none" stroke="#2A2A36" stroke-width="7" stroke-linecap="round" stroke-dasharray="210 70" transform="rotate(135 64 64)"/>
+  <!-- Active meter arc in Claude Coral -->
+  <circle cx="64" cy="64" r="44" fill="none" stroke="url(#claudeGrad)" stroke-width="7" stroke-linecap="round" stroke-dasharray="145 135" transform="rotate(135 64 64)"/>
+  <!-- Inner rhythm dot indicator (green on pace) -->
+  <circle cx="86" cy="30" r="5" fill="#10B981"/>
+  <circle cx="86" cy="30" r="8" fill="#10B981" opacity="0.25"/>
+  <!-- Central Claude Asterisk / Pulse Spark -->
+  <g transform="translate(64,64)">
+    <!-- 8-branch iconic sparkle motif inspired by Claude -->
+    <path d="M0 -22 L0 22 M-22 0 L22 0 M-15.5 -15.5 L15.5 15.5 M-15.5 15.5 L15.5 -15.5" stroke="url(#claudeGrad)" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="4.5" fill="#FAF6EE"/>
+  </g>
+</svg>

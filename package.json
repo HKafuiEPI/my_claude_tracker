@@ -1,0 +1,17 @@
+{
+  "name": "claude-tracker",
+  "version": "1.0.0",
+  "description": "Linux widget: Claude usage per 5h session and week, with pace delta",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron . --no-sandbox",
+    "test": "node --test test/*.test.js",
+    "install-app": "node scripts/install.js",
+    "uninstall-app": "node scripts/install.js uninstall"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^41.7.1"
+  }
+}

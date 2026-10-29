@@ -1,0 +1,31 @@
+
+# --- sauvegarde pre-26.04 ---
+node_modules/
+.next/
+dist/
+build/
+.dart_tool/
+.gradle/
+venv/
+.venv*/
+__pycache__/
+target/
+Pods/
+.expo/
+.cache/
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.pem
+*.p12
+key.properties
+google-services.json
+.DS_Store
+*.log
+local.properties
+
+# --- claude-tracker : fichiers personnels ---
+CLAUDE_TRACKER.md
+stitch_claude_tracker_minimal*

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; script-src 'self'">
+<title>Claude Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <img src="../../assets/icon.png" alt="">
+    <span>CLAUDE<b>TRACKER</b></span>
+    <span id="badge" class="badge"><i></i><span></span></span>
+  </div>
+  <div class="actions">
+    <button id="pin" title="Épinglé au premier plan">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 12V4h1V2H7v2h1v8l-3 2v2h6v6l1 1 1-1v-6h6v-2z"/></svg>
+    </button>
+    <button id="hide" title="Réduire vers le tray">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+  <section id="session"></section>
+  <section id="week"></section>
+</main>
+<footer>
+  <span id="foot"><i></i><span>Chargement…</span></span>
+  <span class="actions"><button id="config" title="Ouvrir la config">⚙</button><button id="refresh" title="Rafraîchir">↺</button></span>
+</footer>
+<script src="renderer.js"></script>
+</body>
+</html>

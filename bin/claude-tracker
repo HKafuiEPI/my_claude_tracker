@@ -1,0 +1,4 @@
+#!/bin/sh
+# --no-sandbox: Ubuntu blocks Chromium's sandbox for npm-installed Electron; the app only loads local files.
+DIR="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
+exec "$DIR/node_modules/.bin/electron" "$DIR" --no-sandbox "$@"
