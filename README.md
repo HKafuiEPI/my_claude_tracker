@@ -18,7 +18,7 @@ Widget Linux (Electron) qui affiche ton usage de **Claude Code** : session de 5 
 ## Installation
 
 ```sh
-git clone <url-du-depot> claude-tracker
+git clone https://github.com/HKafuiEPI/my_claude_tracker.git claude-tracker
 cd claude-tracker
 npm install
 npm test                     # optionnel
